@@ -3,39 +3,71 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="index.css" type="text/css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<script src = 'myCode.js'></script>
-<script src = 'jquery-3.4.1.min.js'></script>
+	<link href="https://fonts.googleapis.com/css?family=Lemon&display=swap" rel="stylesheet">
+	<script src = 'myCode.js'></script>
+	<script src = 'jquery-3.4.1.min.js'></script>
 </head>
 
+
 <body>
-
-
 	<ul id = "postButton">
 		<li>
 			<a href="#">
-			<span> POST </span>
+				<span> POST </span>
 			</a>
-			</li>
-		</ul>
+		</li>
+	</ul>
 
-
-		<div class="container">
-			<div class="image">
-				<img id = "mainImage" class ="mainImageOff" src ="img1.jpg" />
-			</div>
+	<div class="container">
+		<div class="image">
+			<img id = "mainImage" class ="mainImageOff" src ="img1.jpg" />
 		</div>
+	</div>
 
-		<p id = "round" class ="roundNumber"></p>
-		<p id = "number" class ="playerNumber"></p>
-		<img id = "cf" class="top" src="cover.png" />
+	<div class="container2">
+		<div class="pImage">
+			<img id = "postImage" class ="postImageOff" src ="1.png" />
+		</div>
+	</div>
 
-		<img class = "logo" src="logo.png" style="width:15%;position:absolute;bottom:10px;right:10px;">
+	<span class ="rulesSpan" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; RULES</span>
 
+	<p id = "round" class ="roundNumber"></p>
+	<p id = "number" class ="playerNumber"></p>
+	<img id = "cf" class="top" src="cover.png" />
+
+	<form class="form2">
+		<p class="haterpoints">Hater's Points</p>
+		<div class="value-button2" id="decrease2" onclick="decreaseValue2()" value="Decrease Value2">✖</div>
+		<input type="number2" id="numberIn2" value="0" />
+		<div class="value-button2" id="increase2" onclick="increaseValue2()" value="Increase Value2">♥</div>
+	</form>
+
+	<form class="form1">
+		<p class="fanpoints">Fan's Points</p>
+		<div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">✖</div>
+		<input type="number" id="numberIn" value="0" />
+		<div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">♥</div>
+	</form>
+
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<img class = "rules" src="rules.png" style="width:100%;position:absolute;left:0px;">
+		</div>
+	</div>
+
+	<img class = "logo" src="logo.png" style="width:15%;position:absolute;bottom:10px;right:10px;">
 
 	<audio id='mySound' src='sound1.wav'/>
-	<footer>
-	<!-- <img src="logo.png" style="width:15%;position:absolute;bottom:10px;right:10px;"> -->
-	</footer>
+	<!-- <audio id='fade' src='fade.mp3'/> -->
+	<audio id="foobar" src="sweep.mp3" preload="auto">
+		<audio id="foobar2" src="pling.mp3" preload="auto">
 
 
-</body>
+			<footer>
+				<!-- <img src="logo.png" style="width:15%;position:absolute;bottom:10px;right:10px;"> -->
+			</footer>
+
+
+		</body>
