@@ -124,9 +124,14 @@ function increaseValue() {
 	value >6 ? value = 6 : '';
 	value++;
 	document.getElementById('numberIn').value = value;
+	var fanPoint = document.getElementById("foobar2");
+	fanPoint.play();
 	// console.log(value);
-	var point = document.getElementById("foobar2");
-	point.play();
+	if (value > 6){
+	var winPoint = document.getElementById("foobar4");
+	winPoint.play();
+	fanPoint.volume = 0;
+	}
 }
 
 function decreaseValue() {
@@ -145,9 +150,14 @@ function increaseValue2() {
 	value >3 ? value = 3 : '';
 	value++;
 	document.getElementById('numberIn2').value = value;
+	var haterPoint = document.getElementById("foobar5");
+	haterPoint.play();
 	// console.log(value);
-	var point = document.getElementById("foobar2");
-	point.play();
+	if (value > 3){
+	var hWinPoint = document.getElementById("foobar6");
+	hWinPoint.play();
+	haterPoint.volume = 0;
+	}
 }
 
 function decreaseValue2() {
@@ -181,8 +191,12 @@ function random(){
 
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
+	var blip = document.getElementById("foobar3");
+	blip.play();
 }
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+	var blip = document.getElementById("foobar3");
+	blip.play();
 }
